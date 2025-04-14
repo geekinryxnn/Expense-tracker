@@ -11,7 +11,7 @@ function App() {
   ];
 
   const [expenses, setExpenses] = useState(initialExpenses);
-  // Initialize 'day' to an empty string initially
+ 
   const [newExpense, setNewExpense] = useState({ name: '', category: '', amount: '', day: '' });
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -28,7 +28,7 @@ function App() {
     if (newExpense.name && newExpense.category && newExpense.amount && newExpense.day) {
       const newId = expenses.length > 0 ? Math.max(...expenses.map(expense => expense.id)) + 1 : 1;
       setExpenses([...expenses, { ...newExpense, id: newId }]);
-      // Reset 'day' to an empty string after adding
+     
       setNewExpense({ name: '', category: '', amount: '', day: '' });
     } else {
       alert('Please fill in all the fields.');
