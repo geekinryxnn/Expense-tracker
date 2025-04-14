@@ -1,20 +1,20 @@
-#root{
- background-color: rgb(50, 61, 61);
-  }
+#root {
+  background-color: rgb(50, 61, 61);
+}
 
-.header-container{
+.header-container {
   margin: 1rem;
   padding: 0rem 1rem;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 7rem;
 }
 
-.div-form form{
+.div-form form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +24,7 @@
   width: 500px;
 }
 
-.div-search{
+.div-search {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,7 +34,7 @@
   width: 500px;
 }
 
-input{
+input {
   margin: 1rem;
   padding: 0.5rem;
   border-radius: 10px;
@@ -43,7 +43,7 @@ input{
   width: 80%;
 }
 
-button{
+button {
   margin: 1rem;
   padding: 0.5rem;
   border-radius: 10px;
@@ -59,7 +59,8 @@ table {
   margin: 1rem;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
@@ -68,4 +69,3 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-
