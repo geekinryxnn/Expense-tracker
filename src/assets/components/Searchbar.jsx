@@ -8,7 +8,7 @@ function SearchBar({ searchTerm, setSearchTerm }) {
 
   return (
     <div>
-      <label htmlFor="search">Search Expenses:</label>
+      <label htmlFor= "search" id="search-label">Search Expenses:</label>
       <input
         type="text"
         id="search"
