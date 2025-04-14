@@ -1,15 +1,20 @@
-// src/components/SearchBar.js
 import React from 'react';
 
-function SearchBar({ onSearch }) {
+// Receive searchTerm and setSearchTerm as props
+function SearchBar({ searchTerm, setSearchTerm }) {
+  const handleInputChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
   return (
-    <div className="search-bar">
+    <div>
       <label htmlFor="search">Search Expenses:</label>
       <input
         type="text"
         id="search"
-        placeholder="Enter name or category"
-        onChange={(e) => onSearch(e.target.value)}
+        value={searchTerm}
+        onChange={handleInputChange}
+        placeholder="Search by name or category"
       />
     </div>
   );
